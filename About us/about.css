@@ -1,0 +1,26 @@
+/* Basic styling for the about us page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #333;
+}
+p {
+  line-height: 1.6;
+  color: #666;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}

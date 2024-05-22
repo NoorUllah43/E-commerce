@@ -1,0 +1,424 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles  */
+nav{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #212529;
+  color: white;
+  /* padding: 5px; */
+
+}
+nav .logo{
+  
+  width: 30%;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+}
+
+nav .logo img {
+  width: 50px;
+  height: 50px;
+}
+nav ul{
+  /* transition: height 2s ease-in-out; */
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+nav ul li {
+  list-style: none;
+  padding: 5px;
+  font-weight: 500;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.cart {
+  width: 20%;
+  text-align: end;
+}
+.meanu {
+  display: none;
+}
+
+#navform{
+  display: none;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url("images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left, .right {
+  width: 50%;
+  height: 90%;
+}
+
+.heading_con {
+  background-image: url("images/Heading_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  
+
+}
+
+
+.right img {
+  width: 80%;
+  height: 90%;
+}
+
+.left h1 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px rgb(138, 195, 248) ;
+  
+}
+/* Product containner Styles */
+#new-productMH {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 8px 8px 10px rgb(65, 241, 21) ;
+}
+#products
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: aliceblue;
+}
+
+
+
+
+/* products css  */
+.product {
+  width: 230px;
+  height: 450px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+
+}
+
+.product:hover {
+  transform: scale(1.1);
+  border-color: #cc5500;
+}
+
+.product img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  font-size: 18px;
+  overflow: hidden;
+}
+.product p {
+  margin-bottom: 10px;
+}
+.description {
+  margin-top: 5px;
+  height: 65px;
+  font-size: 14px;
+  color: #777;
+  overflow: hidden;
+}
+.price{
+  color: #cc5500;
+  font-size: large;
+ 
+}
+.rating{
+  color: rgb(206, 206, 98);
+}
+
+
+/* Styling for the Add to Cart button */
+.add-to-cart-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+}
+
+.add-to-cart-btn:hover {
+  background-color: #65c468;
+}
+
+
+#Price {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Styling for the success notification */
+.notification {
+  transition: all 1s ease;
+  position: fixed;
+  top: 50px;
+  right: -600px;
+  width: 400px;
+  background-color: #4CAF50; /* Green color */
+  border: 1px solid black;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+
+.notification .icon {
+  margin-right: 10px;
+}
+
+.notification .close-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: large;
+}
+
+.notification .close-btn:hover {
+  color: #f2f2f2;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+#footer-logo {
+  width: 30%;
+}
+#footer-logo img {
+  width: 200px;
+  height: 200px;
+}
+#link-list{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#link-list li {
+  list-style: none;
+  color: rgb(110, 110, 231);
+}
+
+
+
+.footer-inputs-box {
+  width: 30%;
+}
+/* Styles for the email input */
+.footer-inputs {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-inputs:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+.footer-inputs::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.submit-button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+footer p{
+  width: 100%;
+  text-align: center;
+}
+footer a {
+  color: #0000EE;
+  text-decoration: none;
+ 
+}
+.footer_icons {
+  margin:8px 10px;
+  color: white;
+  
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styles  */
+@media screen and (max-width: 850px) {
+  .meanu {
+    display: block;
+    padding: 5px;
+  }
+  nav ul{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #212529;
+    width: 100%;
+    top: 50px;
+    height: 50vh;
+    
+
+  }
+  nav .logo{
+    width: 50%;
+    font-size: large;
+  }
+  .hero {
+    height: 60vh;
+  }
+
+
+  .heading_con {
+    width: 100%;
+    height: 100%;
+  }
+  .left h1 {
+    font-size: 25px;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+  #link-list {
+    width: 45%;
+  }
+  #footer-logo {
+    width: 45%;
+  }
+  .footer-inputs-box {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .hero {
+    height: 50vh;
+  }
+  .left, .right {
+    width: 45%;
+    height: 70%;
+  }
+  .left h1 {
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  #link-list {
+    width: 100%;
+  }
+  #footer-logo {
+    width: 100%;
+  }
+  .left h1 {
+    font-size: 13px;
+  }
+  .hero {
+    height: 45vh;
+  }
+  /* .left, .right {
+    width: 45%;
+    height: 50%;
+  } */
+ .right {
+  display: none;
+ }
+ .left {
+
+   width: 80%;
+  }
+}
