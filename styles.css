@@ -395,7 +395,10 @@ footer a:hover {
   .left h1 {
     font-size: 18px;
   }
-
+.notification {
+    width: 300px;
+    font-size: small;
+  }
 }
 @media screen and (max-width: 400px) {
   #link-list {
