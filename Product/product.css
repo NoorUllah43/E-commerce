@@ -266,6 +266,10 @@ footer a:hover {
     margin-top: 20px;
     width: 100%;
   }
+  .notification {
+    width: 300px;
+    font-size: small;
+  }
 }
 @media screen and (max-width: 400px) {
   #link-list {
